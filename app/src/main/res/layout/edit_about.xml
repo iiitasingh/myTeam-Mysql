@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:layout_constraintCircleRadius="30dp">
+
+
+    <com.github.florent37.shapeofview.shapes.BubbleView
+        android:id="@+id/bubbleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center"
+        app:arrow_posititon_percent="0.5"
+        app:shape_bubble_arrowHeight="30dp"
+        app:shape_bubble_arrowPosition="bottom"
+        app:shape_bubble_arrowWidth="20dp"
+        app:shape_bubble_borderRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pop_bg">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="35dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Edit About"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name_text_input1"
+                        style="@style/EditProfileInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparent"
+                        android:hint="About yourself"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/EditProfileInputLayoutStyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/yourself"
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:layout_height="95dp"
+                            android:textColor="@color/text_Color"
+                            android:gravity="top|start"
+                            android:inputType="textMultiLine"
+                            android:maxLines="5"
+                            android:scrollbars="vertical"
+                            android:maxLength="200"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name_text_input8"
+                        style="@style/EditProfileInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparent"
+                        android:hint="Hobbies"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/EditProfileInputLayoutStyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/hobby"
+                            android:layout_width="match_parent"
+                            android:layout_height="95dp"
+                            android:textColor="@color/text_Color"
+                            android:gravity="top|start"
+                            android:inputType="textMultiLine"
+                            android:maxLines="5"
+                            android:scrollbars="vertical"
+                            android:textSize="14sp"
+                            android:maxLength="100"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button
+                        android:id="@+id/AbtUpdatebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/bgbtnguide_1"
+                        android:fontFamily="@font/mr"
+                        android:text="Update"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </com.github.florent37.shapeofview.shapes.BubbleView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ashback"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bgbtn_3"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/mr"
+                android:paddingLeft="6dp"
+                android:text="Event Name:"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_Color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:fontFamily="@font/mr"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_Color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/mr"
+                android:paddingLeft="6dp"
+                android:text="Description:"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_Color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventDesc"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/background_login"
+                android:fontFamily="@font/mr"
+                android:gravity="top|left"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_Color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/mr"
+                android:paddingLeft="6dp"
+                android:text="Date:"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_Color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eventDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_add_circle_outline_black_24dp"
+                android:focusable="false"
+                android:fontFamily="@font/mr"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_Color"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/collection_Box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/mr"
+                android:text="Contribution Event "
+                android:textColor="@color/text_Color"
+                android:textSize="14sp"
+                android:theme="@style/WhiteCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/mr"
+                android:paddingLeft="6dp"
+                android:text="Contribution Amount:"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_Color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/approxContri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/mr"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_Color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="545dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bgbtn_3"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="3dp"
+                    android:layout_toStartOf="@+id/selectFrnd"
+                    android:fontFamily="@font/mr"
+                    android:gravity="center"
+                    android:text="Select all"
+                    android:textColor="@color/text_Color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/selectFrnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:theme="@style/WhiteCheck" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/eventMembers"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="4dp">
+
+            </ListView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/eventAddImgBtn"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="940dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bgbtnguide_1"
+            android:clickable="true"
+            android:fontFamily="@font/mr"
+            android:padding="5dp"
+            android:text="@string/AddEvent"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btnguide_3"
+            android:elevation="4dp"
+            android:fontFamily="@font/mlight"
+            android:gravity="center"
+            android:text="Add Event"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_anchor="@+id/layout1"
+            app:layout_anchorGravity="top|center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/btnguide_3"
+            android:elevation="4dp"
+            android:fontFamily="@font/mlight"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Select Members"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_anchor="@+id/layout2"
+            app:layout_anchorGravity="top|start" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</ScrollView>

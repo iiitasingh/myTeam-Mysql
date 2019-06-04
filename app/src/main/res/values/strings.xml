@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Team</string>
+    <string name="signup_text">Dont have account? Signup here</string>
+    <string name="forget">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="remember">Remember me</string>
+    <string name="password">.........</string>
+    <string name="username">Email</string>
+    <string name="name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="creatPass">Password</string>
+    <string name="cnfPass">Confirm Password</string>
+    <string name="signup">Signup</string>
+    <string name="login_text">Already have account? Login here</string>
+    <string name="resetpass">Reset Password</string>
+    <string name="team">Team XYZ</string>
+    <string name="yourTeam">Select team</string>
+    <string name="registerTeam">Team not present? Click here</string>
+    <string name="yourTeams">Your Team</string>
+    <string name="Teamname">Team Name</string>
+    <string name="teamPin">Create Team Pin</string>
+    <string name="registerYourTeam">Register Team</string>
+    <string name="teampin">Team pin</string>
+    <string name="nickname">Create nick name</string>
+    <string name="teamSelectionTeam">Teams</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AddEvent">Add Event</string>
+</resources>

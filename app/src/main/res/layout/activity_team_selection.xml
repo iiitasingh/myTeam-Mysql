@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ashback"
+    android:orientation="vertical"
+    tools:context=".teamSelection">
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/teamSelectionheader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/Applogo"
+            android:src="@drawable/ic_teamwork_32"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="start|center_vertical" />
+
+        <TextView
+            android:fontFamily="@font/mr"
+            android:layout_marginLeft="-50dp"
+            android:id="@+id/teamSelectionTeam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/teamSelectionTeam"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/teamSelectionheader"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="40dp">
+        <ListView
+            android:id="@+id/teamlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="4dp">
+        </ListView>
+
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/homebottomappbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/light_blue_primary_dark"
+            app:fabAlignmentMode="end">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:text="@string/registerTeam"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+        ​<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addTeamfab"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_add_circle_outline_black_40dp"
+            app:backgroundTint="@android:color/transparent"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabElevation="6dp"
+            app:fabCustomSize="56dp"
+            app:layout_anchor="@id/homebottomappbar"
+            app:useCompatPadding="true" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

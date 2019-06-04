@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ashback"
+    android:id="@+id/popUpUser"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/headerteam"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/Applogo"
+            android:src="@drawable/ic_teamwork_32"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="start|center_vertical" />
+
+        <TextView
+            android:layout_marginLeft="-50dp"
+            android:id="@+id/team_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/mlight"
+            android:text="@string/team"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerteam"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="40dp">
+        <ListView
+            android:id="@+id/yourteamlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            />
+
+
+    </RelativeLayout>
+    ​<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/homebottomappbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:backgroundTint="@color/light_blue_primary_dark"
+        android:layout_gravity="bottom" />
+    ​
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:id="@+id/homefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:src="@drawable/ic_user_dark_border_60"
+        app:layout_anchor="@id/homebottomappbar"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:backgroundTint="@android:color/transparent"
+        app:borderWidth="0dp"
+        app:useCompatPadding="true"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    ​
+</RelativeLayout>
