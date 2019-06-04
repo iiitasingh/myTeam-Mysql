@@ -94,7 +94,7 @@ public class BirthdayCalender extends AppCompatActivity {
         evenCalenderList = new ArrayList<EventList>();
         String eventString = calenderOwner.events;
         String[] User_events = eventString.split(",", 0);
-        String sql1 = "SELECT event_name,event_date FROM table_event WHERE event_ID IN (" + DatabaseHelper.makePlaceholders(User_events.length) + ")";
+        String sql1 = "SELECT event_name,event_date FROM table_event WHERE event_ID IN (" + DatabaseHelper.makePlaceholders(User_events.length -1) + ")";
         HashMap<String, String> getEvent = new HashMap<>();
         getEvent.put("events", eventString);
         getEvent.put("sql", sql1);
